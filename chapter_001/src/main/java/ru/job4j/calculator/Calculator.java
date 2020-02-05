@@ -1,3 +1,8 @@
+/**
+ * Calculator.
+ *
+ * @author Alexander Zukov (linuzzz7@yandex.ru)
+ */
 package ru.job4j.calculator;
 
 public class Calculator {
@@ -21,6 +26,10 @@ public class Calculator {
         System.out.println(first + " - " + second + " = " + result);
     }
 
+    /**
+     * Main.
+     * @param args - arg.
+     */
     public static void main(String[] args) {
         add(1, 1);
         div(4, 2);
