@@ -18,7 +18,6 @@ public class Merge {
                 rsl = left;
                 break;
             }
-
             if (indexL <= left.length - 1 && left[indexL] <= right[indexR]) {
                 rsl[indexMerge] = left[indexL];
                 indexL++;
@@ -28,7 +27,6 @@ public class Merge {
                 indexR++;
             }
             indexMerge++;
-
             if (indexR == right.length) {
                 for (int i = indexL; indexL < left.length; indexL++, indexMerge++) {
                     rsl[indexMerge] = left[indexL];
