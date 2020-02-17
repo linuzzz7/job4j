@@ -2,4 +2,4 @@
 # and temp
 # and IDEA
 
-Создание ветки из IDEA.
+Создание ветки из IDEA...
