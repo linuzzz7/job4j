@@ -1,0 +1,13 @@
+Index: deploy.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- deploy.sh	(revision 7730dafd5cf6b51c10b26428d5a2c667690bdc0d)
++++ deploy.sh	(date 1582625553426)
+@@ -1,1 +1,2 @@
+-# deploy script
+\ No newline at end of file
++# deploy script
++# v2
+\ No newline at end of file
