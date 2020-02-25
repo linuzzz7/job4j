@@ -7,9 +7,10 @@ public class PointTest {
 
     @Test
     public void distance() {
-        int in1 = 2, in2 = 3, in3 = 4, in4 = 5;
-        double expected = 2.8284;
-        double out = Point.distance(in1, in2, in3, in4);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double expected = 2.0;
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
