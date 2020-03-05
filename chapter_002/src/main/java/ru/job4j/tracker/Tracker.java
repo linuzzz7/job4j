@@ -46,12 +46,30 @@ public class Tracker {
     }
 
     public Item findById(String id) {
-        Item temp = null;
-        for (int i = 0; i < this.items.length; i++) {
-            if (this.items[i] != null && this.items[i].getId().equals(id)) {
-                temp = this.items[i];
+        // Находим индекс
+        int index = indexOf(id);
+        // Если индекс найден возвращаем item, иначе null
+        return index != -1 ? items[index] : null;
+    }
+
+    private int indexOf(String id) {
+        int rsl = -1;
+        for (int index = 0; index < position; index++) {
+            if (items[index].getId().equals(id)) {
+                rsl = index;
+                break;
             }
         }
-        return temp;
+        return rsl;
+    }
+
+    public boolean replace(String id, Item item) {
+        boolean rsl = false;
+        int index = indexOf(id);
+        if (index != -1) {
+            this.items[index].setName(item.getName());
+            rsl = true;
+        }
+        return rsl;
     }
 }
