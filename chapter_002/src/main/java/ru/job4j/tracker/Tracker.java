@@ -1,5 +1,6 @@
 package ru.job4j.tracker;
 
+import java.lang.annotation.Target;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
@@ -58,7 +59,8 @@ public class Tracker {
         boolean rsl = false;
         int index = indexOf(id);
         if (index != -1) {
-            this.items[index].setName(item.getName());
+            this.items[index] = item;
+            this.items[index].setId(id);
             rsl = true;
         }
         return rsl;
