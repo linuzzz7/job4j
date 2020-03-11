@@ -2,18 +2,10 @@ package ru.job4j.pojo;
 
 public class Library {
     public static void main(String[] args) {
-        Book muggle = new Book();
-        muggle.setName("Muugle");
-        muggle.setSum(130);
-        Book cinderella = new Book();
-        cinderella.setName("Cinderella");
-        cinderella.setSum(150);
-        Book spider = new Book();
-        spider.setName("Clean code");
-        spider.setSum(200);
-        Book cat = new Book();
-        cat.setName("Black cat");
-        cat.setSum(222);
+        Book muggle = new Book("Muugle", 130);
+        Book cinderella = new Book("Cinderella", 150);
+        Book spider = new Book("Clean code", 200);
+        Book cat = new Book("Black cat", 222);
         Book[] lib = new Book[4];
         lib[0] = muggle;
         lib[1] = cinderella;
@@ -33,7 +25,7 @@ public class Library {
 
         for (int i = 0; i < lib.length; i++) {
             if (lib[i].getName().equals("Clean code")) {
-                System.out.println("\n" + lib[i].getName() + " " + lib[i].getSum());
+                System.out.println(System.lineSeparator() + lib[i].getName() + " " + lib[i].getSum());
             }
         }
     }

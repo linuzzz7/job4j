@@ -4,6 +4,14 @@ public class Book {
     private String name;
     private int sum;
 
+    public Book(String name, int sum) {
+        this.name = name;
+        this.sum = sum;
+    }
+
+    public Book() {
+    }
+
     public String getName() {
         return name;
     }
