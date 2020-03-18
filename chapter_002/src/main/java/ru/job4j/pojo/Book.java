@@ -9,9 +9,6 @@ public class Book {
         this.sum = sum;
     }
 
-    public Book() {
-    }
-
     public String getName() {
         return name;
     }

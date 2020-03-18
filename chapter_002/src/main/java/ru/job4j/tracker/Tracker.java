@@ -60,7 +60,7 @@ public class Tracker {
         int index = indexOf(id);
         if (index != -1) {
             this.items[index] = item;
-            this.items[index].setId(id);
+            item.setId(id);
             rsl = true;
         }
         return rsl;
