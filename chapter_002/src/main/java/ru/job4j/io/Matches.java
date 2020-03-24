@@ -25,17 +25,17 @@ public class Matches {
     public static void main(String[] args) {
         System.out.println("Игра 11, игрок должен взять от 1 до 3 спичек победит тот кто возьмет последние");
         int match = 11;
+        int gamer = 1;
         while (match > 0) {
-            match -= input(1);
+            match -= input(gamer);
             if (match <= 0) {
-                System.out.println("Победил 1 игрок");
+                System.out.println("Победил " + gamer + " игрок");
                 break;
             }
-            System.out.println("На столе осталось " + match + " спичек");
-            match -= input(2);
-            if (match <= 0) {
-                System.out.println("Победил 2 игрок");
-                break;
+            if (gamer == 1) {
+                gamer = 2;
+            } else {
+                gamer = 1;
             }
             System.out.println("На столе осталось " + match + " спичек");
         }
