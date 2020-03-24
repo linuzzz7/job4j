@@ -45,13 +45,16 @@ public class StartUI {
                 } else {
                     System.out.println("Удаление не произведена");
                 }
-                tracker.delete(id);
             } else if (select == 4) {
                 System.out.println("=== Find item by Id ====");
                 System.out.print("Enter id: ");
                 String id = scanner.nextLine();
-                Item result = tracker.findById(id);
-                System.out.println(result.getId() + " " + result.getName());
+                if (tracker.findById(id) != null) {
+                    Item result = tracker.findById(id);
+                    System.out.println(result.getId() + " " + result.getName());
+                } else {
+                    System.out.println("По данному Id ничего не найдено");
+                }
             } else if (select == 5) {
                 System.out.println("=== Find items by name ====");
                 System.out.print("Enter name: ");
