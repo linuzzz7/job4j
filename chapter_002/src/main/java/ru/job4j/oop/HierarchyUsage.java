@@ -1,5 +1,7 @@
 package ru.job4j.oop;
 
+import ru.job4j.oop.casting.Object;
+
 public class HierarchyUsage {
     public static void main(String[] args) {
         // создаем объекта класса Car.
@@ -14,8 +16,8 @@ public class HierarchyUsage {
         Car carFromObject = (Car) ocar;
 
         // Ошибка в приведении типа.
-        Object bicycle = new Bicycle();
-        Car cb = (Car) bicycle; // код завершится с ошибок приведения типов ClassCastException
+//        Object bicycle = new Bicycle();
+//        Car cb = (Car) bicycle; // код завершится с ошибок приведения типов ClassCastException
 
         System.out.println(new Car());
         System.out.println(new Bicycle());
