@@ -49,8 +49,8 @@ public class StartUI {
                 System.out.println("=== Find item by Id ====");
                 System.out.print("Enter id: ");
                 String id = scanner.nextLine();
-                if (tracker.findById(id) != null) {
-                    Item result = tracker.findById(id);
+                Item result = tracker.findById(id);
+                if (result != null) {
                     System.out.println(result.getId() + " " + result.getName());
                 } else {
                     System.out.println("По данному Id ничего не найдено");
