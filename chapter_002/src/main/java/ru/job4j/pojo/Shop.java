@@ -47,30 +47,30 @@ public class Shop {
 //                System.out.println("null");
 //            }
 //        }
-
-        Product products2[] = new Product[4];
-        products2[0] = new Product("Water", 17);
-        products2[1] = new Product("Chis", 4);
-        products2[2] = new Product("Orange", 59);
-        products2[3] = new Product("Potato", 20);
-        Shop shop2 = new Shop();
-        products2 = shop2.delete(products2, 1);
-        for (int i = 0; i < products2.length; i++) {
-            Product product2 = products2[i];
-            //проверяем, что объект не равен null. так как  у нас массив не заполнен целиком.
-            if (product2 != null) {
-                System.out.println(product2.getName());
-            } else {
-                System.out.println("null");
-            }
-        }
-    }
-
-    public Product[] delete(Product[] products, int index) {
-        for (int i = index; i < products.length - 1; i++) {
-            products[i] = products[i + 1];
-        }
-        products[products.length - 1] = null;
-        return products;
+//
+//        Product[] products2 = new Product[4];
+//        products2[0] = new Product("Water", 17);
+//        products2[1] = new Product("Chis", 4);
+//        products2[2] = new Product("Orange", 59);
+//        products2[3] = new Product("Potato", 20);
+//        Shop shop2 = new Shop();
+//        products2 = shop2.delete(products2, 1);
+//        for (int i = 0; i < products2.length; i++) {
+//            Product product2 = products2[i];
+//            //проверяем, что объект не равен null. так как  у нас массив не заполнен целиком.
+//            if (product2 != null) {
+//                System.out.println(product2.getName());
+//            } else {
+//                System.out.println("null");
+//            }
+//        }
+//    }
+//
+//    public Product[] delete(Product[] products, int index) {
+//        for (int i = index; i < products.length - 1; i++) {
+//            products[i] = products[i + 1];
+//        }
+//        products[products.length - 1] = null;
+//        return products;
     }
 }
