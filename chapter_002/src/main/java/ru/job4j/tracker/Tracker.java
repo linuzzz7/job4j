@@ -1,7 +1,5 @@
 package ru.job4j.tracker;
 
-import java.lang.annotation.Target;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 
