@@ -10,7 +10,7 @@ import java.util.StringJoiner;
 public class PaintTest {
     @Test
     public void whenDrawSquare() {
-        // получаем ссылку на стандартный вывод в консоль.
+        // получаем ссылку на стандартный вывод в консоль..
         PrintStream stdout = System.out;
         // Создаем буфур для хранения вывода.
         ByteArrayOutputStream out = new ByteArrayOutputStream();
